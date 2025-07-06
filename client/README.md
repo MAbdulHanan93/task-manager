@@ -11,7 +11,7 @@
 
 2. **Run the app**
 
-    - Open your terminal on the **_client_** and type in
+    - Open your terminal on the **client** and type in
 
     ```bash
     npm run dev

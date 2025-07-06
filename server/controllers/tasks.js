@@ -75,7 +75,7 @@ router.patch("/:id", isAuth, async (req, res) => {
 		} else {
 			let updatedTask = await Task.findByIdAndUpdate(
 				req.params.id,
-				{ ...req.body, completed: true },
+				{ ...req.body, completed: !task.completed },
 				{ new: true }
 			);
 			return res.json({
